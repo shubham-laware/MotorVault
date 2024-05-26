@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background-color: #616fbf;
+  transition: width 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+
+.sidebar-toggle {
+  /* border: 1px solid yellowgreen; */
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sidebar-menu {
+  /* border: 1px solid yellowgreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+
+.sidebar-menu-item {
+  /* border: 1px solid yellowgreen; */
+
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu{
+  
+  color: #fff;
+  display: flex;
+  align-items: center ;
+  width: 100%;
+}
+
+.sidebar-menu-item:hover {
+  background-color: #7290dd;
+}
+
+.sidebar-menu-item a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu-item span {
+  margin-left: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.svg-asset{
+  width: 30px;
+}
+.svg-ticket{
+  width: 25px;
+}
+
+.svg-dashboard{
+  width: 25px;
+}
+
+.hamburger-icon{
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  
+}
+
+.cancel-outer{
+  overflow: hidden;
+  position: relative;
+}
+.cancel-icon{
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 140px;
+
+}
+
+
+.layout {
+  display: flex; 
+  overflow: hidden;
+
+}
+
+.content {
+  flex-grow: 1;
+}
+
+
+
+
+.c-layout{
+  /* min-height: 100vh; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.c-nav{
+  padding: 20px 40px;
+  background-color: #616fbf;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #ddd;
+
+}
+
+.c-content{
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height:100%;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.overview-cards {
+  /* border: 1px solid red; */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.overview-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 180px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.recent-activity-text {
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+
+
+
+.recent-activity-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to 1 column */
+  /* gap: 20px; */
+}
+
+.recent-activity-layout {
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.date {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.recent-activity{
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.activity-list {
+  list-style-type: disc;
+  padding-left: 10px;
+  
+}
+
+.activity-list li{
+  margin-bottom: 12px;
+}
+
+@media (max-width:400px) {
+
+  .overview-card{
+    padding: 15px;
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .overview-card h1{
+    font-size: 24px;
+  }
+
+  .overview-card p{
+    font-size: 14px;
+  }
+
+  .recent-activity-text {
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+  
+}
+
+@media (min-width: 401px) and (max-width: 832px) {
+ .overview-card{
+  padding: 15px;
+  width: 45%;
+ }
+}
+
+/* Media query for screens larger than 576px */
+@media (min-width: 767px) {
+  .recent-activity-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
