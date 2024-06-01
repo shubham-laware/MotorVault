@@ -1,0 +1,116 @@
+
+
+/* AddAssetModal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0px 10px;
+    width: 100%;
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .modal-title {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: #616fbf;
+  }
+  
+  .modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    padding: 16px;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #616fbf;
+    color: #fff;
+    border: none;
+  }
+  
+  .modal-open {
+    overflow: hidden;
+  }
+
+  .ticket-modal{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+
+  }
+
+  .ticket-modal-inline{
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+
+  .ticket-modal-description{
+    width: 100%;
+    resize: none;
+  }
+
+  .ticket-modal-inline-item{
+    width: 50%;
+  }
+
+ .ticket-modal-status{
+    cursor: pointer;
+ }
+  
+
+  
+ 

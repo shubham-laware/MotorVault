@@ -1,0 +1,159 @@
+.add-ticket-btn-layout {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.add-ticket-btn {
+  width: 90px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #616fbf;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tickets-layout {
+  height: 100%;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.add-ticket-btn:hover {
+  background-color: #5865ac;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.ticket td {
+    padding: 20px 0;
+  }
+
+.ticket-id {
+  /* border: 1px solid red; */
+  width: 100px;
+  text-align: center;
+}
+
+.tk-asset-id {
+  /* border: 1px solid red; */
+  width: 100px;
+  text-align: center;
+}
+
+.issue {
+  /* border: 1px solid red;   */
+  width: 300px;
+  text-align: center;
+}
+
+.raised {
+  /* border: 1px solid red; */
+  width: 100px;
+  text-align: center;
+}
+
+.status {
+  /* border: 1px solid red; */
+  width: 100px;
+  text-align: center;
+}
+
+.actions{
+    /* border: 1px solid red; */
+    width: 30px;
+}
+
+.actions div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.options-svg{
+    width: 20px;
+    cursor: pointer;
+
+}
+
+.mobile-ticket-container {
+  display: none;
+}
+
+
+@media (max-width:576px) {
+
+  .tickets-layout{
+    padding:  10px;
+    height: 100%;
+    margin-bottom: 20px;
+  } 
+  .mobile-ticket-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .add-ticket-btn-layout {
+    padding-right: 10px;
+  }
+ 
+
+  .tickets-layout table{
+    display: none;
+  }
+
+  .ticket-card{
+    border: 1px solid rgb(93, 92, 92);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:20px  10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-items{
+    display: flex;
+  }
+
+ 
+
+  .mobile-actions{
+    display: flex;    
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+  }
+
+  .mobile-title {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+
+  .mobile-value{
+    width: 60%;
+  }
+
+  .mobile-issue{
+    align-items: center;
+  }
+  
+}
+
+
+
+
+
+

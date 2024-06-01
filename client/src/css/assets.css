@@ -1,0 +1,138 @@
+.add-asset-btn-layout {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.add-asset-btn {
+  width: 90px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #616fbf;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.add-asset-btn:hover {
+  background-color: #5865ac;
+}
+
+.assets-layout {
+  /* border: 1px solid red; */
+  height: 100%;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.asset {
+  cursor: pointer;
+}
+
+.asset td {
+  padding: 20px 0;
+}
+
+.asset-name {
+  /* border: 1px solid red; */
+  width: 300px;
+  text-align: center;
+}
+
+.asset-id {
+  /* border: 1px solid red; */
+  width: 150px;
+  text-align: center;
+}
+
+.asset-status {
+  /* border: 1px solid red; */
+  width: 200px;
+  text-align: center;
+}
+
+.asset-installation {
+  /* border: 1px solid red; */
+  width: 100px;
+  text-align: center;
+}
+
+.actions {
+  /* border: 1px solid red; */
+  width: 30px;
+  text-align: center;
+}
+
+.actions div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #616fbf;
+  color: white;
+}
+
+tr:hover {
+  background-color: #e9e9e9;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.delete-svg {
+  width: 20px;
+}
+
+
+@media (max-width:576px) {
+
+  .add-asset-btn-layout{
+    padding-right: 5px;
+  }
+  .assets-layout{
+    padding: 10px;
+  }
+
+  table{
+    font-size: 14px;
+  }
+
+  .actions div{
+    width: 80px;
+  }
+  .asset-installation{
+    display: none;
+  }
+
+  .asset-status{
+    display: none;
+  }
+}
+
+
+
+
+
+
+

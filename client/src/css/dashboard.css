@@ -1,0 +1,133 @@
+.overview {
+    margin-bottom: 20px;
+  }
+  
+  .overview-cards {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .overview-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 180px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .recent-activity-text {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+  }
+  
+  
+  
+  .recent-activity-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .recent-activity-layout {
+    /* border: 1px solid red; */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .recent-activity{
+    padding: 20px;
+  
+  
+  }
+  
+  .activity-list {
+    list-style-type: disc;
+    padding-left: 10px;
+    
+  }
+  
+  .activity-list li{
+    margin-bottom: 12px;
+  }
+  
+  @media (max-width:400px) {
+    
+    .overview-cards{
+        padding: 20px 10px 0px 10px;
+    }
+    .overview-card{
+      padding: 15px;
+      width: 45%;
+      overflow: hidden;
+      
+    }
+  
+    .overview-card h1{
+      font-size: 24px;
+    }
+  
+    .overview-card p{
+      font-size: 14px;
+    }
+
+    .recent-activity-layout {
+        padding: 0px;
+    }
+    .recent-activity-container{
+      padding: 10px;
+    }
+  
+    .recent-activity-text {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 10px;
+  }
+
+  .date{
+    text-align: center;
+  }
+    
+  }
+  
+  @media (min-width: 401px) and (max-width: 832px) {
+   .overview-card{
+    padding: 15px;
+    width: 45%;
+   }
+  }
+  
+  /* Media query for screens larger than 576px */
+  @media (min-width: 767px) {
+    .recent-activity-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
