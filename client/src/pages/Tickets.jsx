@@ -178,7 +178,7 @@ function Tickets() {
     if (validated) {
       try {
         const response = await axios.post(
-          `https://motorvault.onrender.com/${ticket.ticketID}`,
+          `https://motorvault.onrender.com/api/v1/edit-ticket/${ticket.ticketID}`,
           updatedFields
         );
         if (response.status === 200) {
