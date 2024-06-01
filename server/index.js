@@ -3,6 +3,11 @@ import cors from "cors";
 import assetRouter from "./routes/assets.route.js";
 import ticketRouter from "./routes/ticket.route.js";
 import { dbConnect } from "./db/dbConnet.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
@@ -17,6 +22,6 @@ app.get("/", (req, res) => {
   res.send("Hello");
 });
 
-app.listen(3000, () => {
-  console.log("Server started on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
