@@ -14,7 +14,6 @@ function App() {
     <Router>
       <Layout>
       <Routes>
-      
         <Route path='/' element={<Dashboard/>} />
         <Route path='/assets' element={<Assets/>} />
         <Route path='/asset/:assetName' element={<AssetInfo/>} />
