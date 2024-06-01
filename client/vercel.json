@@ -1,39 +1,5 @@
 {
-    "version": 2,
-    "name": "client",
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "dist"
-        }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/static/(.*)\\.js",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
-      },
-      {
-        "source": "/static/(.*)\\.mjs",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/ecmascript"
-          }
-        ]
-      }
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
