@@ -15,6 +15,25 @@
         "src": "/(.*)",
         "dest": "/index.html"
       }
+    ],
+    "rewrites": [
+      {
+        "source": "/static/**/*.js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      },
+      {
+        "source": "/static/**/*.mjs",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/ecmascript"
+          }
+        ]
+      }
     ]
   }
-  
