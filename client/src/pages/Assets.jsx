@@ -19,7 +19,7 @@ function Assets() {
 
   const fetchAssets = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/v1/assets");
+      const response = await axios.get("https://motorvault.onrender.com/api/v1/assets");
       if (response.status === 200) {
         const data = response.data.assets;
         setAssets(data);
@@ -164,7 +164,7 @@ function Assets() {
     if (validated) {
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/v1/new-asset",
+          "https://motorvault.onrender.com/api/v1/new-asset",
           asset
         );
         if (response.status === 201) {
@@ -205,7 +205,7 @@ function Assets() {
     if (validated) {
       try {
         const response = await axios.post(
-          `http://localhost:3000/api/v1/edit-asset/${asset.motorID}`,
+          `https://motorvault.onrender.com/api/v1/edit-asset/${asset.motorID}`,
           updatedFields
         );
         if (response.status === 200) {
@@ -229,7 +229,7 @@ function Assets() {
 
   const handleDeleteAsset = async()=>{
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/delete-asset',{assetToDelete});
+      const response = await axios.post('https://motorvault.onrender.com/api/v1/delete-asset',{assetToDelete});
       if(response.status === 200){
         toast.success(response.data.message, {
           autoClose: 1000,

@@ -14,7 +14,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchAssetData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/v1/assets");
+        const response = await axios.get("https://motorvault.onrender.com/api/v1/assets");
         if (response.status === 200) {
           const assets = response.data.assets;
           const totalAssets = assets.length;

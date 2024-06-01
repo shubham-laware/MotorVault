@@ -15,7 +15,7 @@ function Tickets() {
 
   const fetchTickets = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/v1/tickets");
+      const response = await axios.get("https://motorvault.onrender.com/api/v1/tickets");
 
       if (response.status === 200) {
         const data = response.data.tickets;
@@ -138,7 +138,7 @@ function Tickets() {
     if (validated) {
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/v1/new-ticket",
+          "https://motorvault.onrender.com/api/v1/new-ticket",
           ticket
         );
         if (response.status === 201) {
@@ -178,7 +178,7 @@ function Tickets() {
     if (validated) {
       try {
         const response = await axios.post(
-          `http://localhost:3000/api/v1/edit-ticket/${ticket.ticketID}`,
+          `https://motorvault.onrender.com/${ticket.ticketID}`,
           updatedFields
         );
         if (response.status === 200) {
@@ -201,7 +201,7 @@ function Tickets() {
   const handleDeleteTicket = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/delete-ticket",
+        "https://motorvault.onrender.com/api/v1/delete-ticket",
         { ticketToDelete }
       );
       if (response.status === 200) {
