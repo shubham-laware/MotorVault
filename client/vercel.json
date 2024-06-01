@@ -16,9 +16,9 @@
         "dest": "/index.html"
       }
     ],
-    "rewrites": [
+    "headers": [
       {
-        "source": "/static/**/*.js",
+        "source": "/static/(.*)\\.js",
         "headers": [
           {
             "key": "Content-Type",
@@ -27,7 +27,7 @@
         ]
       },
       {
-        "source": "/static/**/*.mjs",
+        "source": "/static/(.*)\\.mjs",
         "headers": [
           {
             "key": "Content-Type",
